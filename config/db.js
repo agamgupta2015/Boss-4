@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-const mongoUrl = process.env.MONGODB_URI;
-
+const mongoUrl = "mongodb://localhost:27017";
+//process.env.MONGODB_URI
 function databaseConnection() {
     mongoose.set("strictQuery", true);
     mongoose
