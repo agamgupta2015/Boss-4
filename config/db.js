@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
-const mongoUrl = process.env.MONGODB_URI;
+//const mongoUrl = process.env.MONGODB_URI;
 //process.env.MONGODB_URI
 function databaseConnection() {
     mongoose.set("strictQuery", true);
     mongoose
-        .connect(mongoUrl, {
+        .connect("mongodb+srv://agam_:ZfuMMFdVOXddsvcf@db.re150tm.mongodb.net/?retryWrites=true&w=majority", {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         })
